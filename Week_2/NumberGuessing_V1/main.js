@@ -7,7 +7,7 @@ function playGame(){
     //We added parseInt() function because we would want the value as a number than string
     var from = parseInt(prompt("Enter the lower bound"));
 
-    var to = parseInt(promt("Enter the higher bound"));
+    var to = parseInt(prompt("Enter the higher bound"));
 
     var target= Math.round(Math.random() * (to - from) + from);
 
@@ -18,7 +18,7 @@ function playGame(){
     //loop until user guesser correct number
     while(currentGuess != target){
         if (currentGuess < target){
-        currentGuess = parseInt((prompt("Enter a higher number"));
+        currentGuess = parseInt(prompt("Enter a higher number"));
     
             totalGuesses++;
         }else if (currentGuess > target){
